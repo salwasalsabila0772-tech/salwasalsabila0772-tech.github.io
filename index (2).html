@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salwa Salsabila</title>
+  <meta name="description" content="Salwa Salsabila, mahasiswa PTIK UNNES yang ingin menjadi full stack developer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style (1).css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#beranda">Salwa<span>.</span></a>
+    <nav>
+      <a href="#profil">Profil</a>
+      <a href="#kesibukan">Kesibukan</a>
+      <a href="#bidang">Bidang IT</a>
+      <a href="#cita-cita">Cita-cita</a>
+    </nav>
+    <button id="themeBtn" class="theme" aria-label="Ganti tema terang atau gelap">Gelap</button>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-text">
+        <p id="greeting" class="greeting">Halo!</p>
+        <h1>Salwa Salsabila</h1>
+        <p class="lead">Mahasiswa PTIK UNNES yang sedang belajar membangun aplikasi web, API, AI, dan AR.</p>
+        <div class="cta">
+          <a class="btn primary" href="#bidang">Lihat bidang yang kupelajari</a>
+          <a class="btn" href="#profil">Kenalan dulu</a>
+        </div>
+      </div>
+      <div class="photo-wrap">
+        <span class="chip c1">API</span>
+        <span class="chip c2">AI</span>
+        <span class="chip c3">AR</span>
+      <figure class="photo">
+        <img src="foto.jpg" alt="Foto Salwa Salsabila" onerror="this.parentElement.classList.add('empty'); this.remove();">
+        <figcaption>Taruh fotomu di sini<br><small>simpan sebagai foto.jpg</small></figcaption>
+      </figure>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="track"><span>Full stack developer</span><span>API</span><span>AI</span><span>AR</span><span>PTIK UNNES</span><span>Full stack developer</span><span>API</span><span>AI</span><span>AR</span><span>PTIK UNNES</span><span>Full stack developer</span><span>API</span><span>AI</span><span>AR</span><span>PTIK UNNES</span><span>Full stack developer</span><span>API</span><span>AI</span><span>AR</span><span>PTIK UNNES</span></div></div>
+
+    <section class="block" id="profil">
+      <h2>Profil</h2>
+      <dl class="facts">
+        <div><dt>Nama</dt><dd>Salwa Salsabila</dd></div>
+        <div><dt>NIM</dt><dd>2505090035</dd></div>
+        <div><dt>Program studi</dt><dd>Pendidikan Teknik Informatika dan Komputer (PTIK)</dd></div>
+        <div><dt>Tahun angkatan</dt><dd>2025</dd></div>
+        <div><dt>Universitas</dt><dd>Universitas Negeri Semarang</dd></div>
+      </dl>
+    </section>
+
+    <section class="block" id="kesibukan">
+      <h2>Kesibukan selain kuliah</h2>
+      <div class="panel">
+        <h3>BSO EneRC</h3>
+        <p>Aku bergabung di organisasi dan kepanitiaan BSO EneRC (Engineering Research Club) Fakultas Teknik UNNES. Di sini aku belajar bekerja dalam tim, mengatur waktu, dan menyelesaikan proyek bersama.</p>
+      </div>
+    </section>
+
+    <section class="block" id="bidang">
+      <h2>Bidang IT yang ingin kudalami</h2>
+      <p class="sub">Tujuanku menjadi full stack developer. Pilih salah satu bidang untuk melihat alasannya.</p>
+      <div class="tabs" role="tablist" aria-label="Bidang IT">
+        <button role="tab" aria-selected="true" aria-controls="p-api" id="t-api" class="tab active">API</button>
+        <button role="tab" aria-selected="false" aria-controls="p-ai" id="t-ai" class="tab">AI</button>
+        <button role="tab" aria-selected="false" aria-controls="p-ar" id="t-ar" class="tab">AR</button>
+      </div>
+      <div class="tabpanel" id="p-api" role="tabpanel" aria-labelledby="t-api">
+        <h3>API</h3>
+        <p>API adalah jembatan antara tampilan web dan data. Aku ingin bisa merancang API yang rapi, aman, dan mudah dipakai, supaya sisi frontend dan backend saling terhubung dengan baik.</p>
+        <ul><li>REST API dan JSON</li><li>Autentikasi dan keamanan dasar</li><li>Dokumentasi API</li></ul>
+      </div>
+      <div class="tabpanel" id="p-ai" role="tabpanel" aria-labelledby="t-ai" hidden>
+        <h3>AI</h3>
+        <p>Aku tertarik memakai AI untuk membuat aplikasi lebih membantu penggunanya, misalnya asisten belajar dan fitur yang bisa memahami pertanyaan pengguna.</p>
+        <ul><li>Integrasi model AI lewat API</li><li>Prompt engineering</li><li>Dasar machine learning</li></ul>
+      </div>
+      <div class="tabpanel" id="p-ar" role="tabpanel" aria-labelledby="t-ar" hidden>
+        <h3>AR</h3>
+        <p>Augmented reality membuat materi yang sulit dibayangkan jadi bisa dilihat langsung. Aku ingin membuat pengalaman AR yang berguna untuk belajar.</p>
+        <ul><li>AR berbasis web</li><li>Model 3D dasar</li><li>Interaksi dan antarmuka AR</li></ul>
+      </div>
+    </section>
+
+    <section class="block" id="cita-cita">
+      <h2>Cita-cita</h2>
+      <blockquote>Menjadi full stack developer yang membangun produk berbasis AI dan AR untuk pendidikan, sekaligus menjadi pendidik teknologi yang membagikan ilmunya.</blockquote>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Salwa Salsabila. PTIK UNNES.</p>
+    <a href="#beranda" class="top">Kembali ke atas</a>
+  </footer>
+
+  <script src="script (1).js"></script>
+</body>
+</html>
