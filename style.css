@@ -1,4 +1,3 @@
-/* Palet dari poster "Motion Quiz Time": biru, pink, baby blue, putih */
 :root{
   --bg:#EAF3FC; --surface:#FFFFFF; --ink:#16295A; --muted:#51628F;
   --blue:#3F6DB3; --pink:#EE4FA2; --pink-soft:#FFD2EA; --sky:#BFE3F5; --line:#C9DAEE;
@@ -29,7 +28,7 @@ main{max-width:1040px;margin:0 auto;padding:0 clamp(20px,5vw,40px)}
 
 .hero{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:48px;padding:72px 0 64px}
 .greeting{color:var(--blue);font-weight:700;margin-bottom:10px}
-/* Nama dalam kotak pink berbingkai, seperti judul di poster */
+
 .hero h1{display:inline-block;font-size:clamp(2.3rem,6.5vw,4.2rem);font-weight:800;letter-spacing:-.02em;color:#16295A;background:var(--pink);border:3px solid #16295A;padding:6px 20px 10px;box-shadow:6px 6px 0 var(--sky)}
 .lead{max-width:34ch;color:var(--muted);font-size:1.15rem;margin:24px 0 28px}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
